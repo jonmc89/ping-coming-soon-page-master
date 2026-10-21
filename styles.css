@@ -18,3 +18,150 @@
   --red-400: #ff5466;
   --green-500: #2ecc71;
 }
+
+/* || Main Styles */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  height: 100vh;
+  font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-end: 5em;
+}
+
+.logo {
+  margin-block-end: 2.5rem;
+  width: 3.3487rem;
+  height: 0.9525rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-end: 2.5rem;
+
+  h1 {
+    color: var(--grey-400);
+    font-weight: 400;
+  }
+
+  p {
+    color: var(--blue-950);
+    font-size: 0.75rem;
+  }
+}
+
+.soon {
+  color: var(--blue-950);
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-block-end: 4rem;
+  width: 100%;
+
+  input,
+  button {
+    border-radius: 1.75rem;
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+  }
+
+  input {
+    border: 0.1rem solid var(--blue-200);
+    background-color: var(--white);
+    color: var(--blue-950);
+  }
+
+  .email-input:focus {
+    border: 0.2rem solid var(--blue-500);
+  }
+
+  ::-webkit-input-placeholder {
+    color: var(--blue-200);
+  }
+
+  :-moz-placeholder {
+    color: var(--blue-200);
+  }
+
+  ::-moz-placeholder {
+    color: var(--blue-200);
+  }
+
+  :-ms-input-placeholder {
+    color: var(--blue-200);
+  }
+
+  button {
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem var(--blue-200);
+    border: 0.1rem solid var(--blue-500);
+    background-color: var(--blue-500);
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  button:hover {
+    filter: brightness(120%);
+  }
+}
+
+.illustration-dashboard-image {
+  width: 19.9956rem;
+  height: 11.9962rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  p {
+    color: var(--grey-400);
+    font-size: 0.75rem;
+  }
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid var(--blue-200);
+    border-radius: 50%;
+    width: 1.9375rem;
+    height: 1.9375rem;
+    text-decoration: none;
+  }
+
+  i {
+    color: var(--blue-500);
+  }
+}
