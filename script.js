@@ -12,6 +12,15 @@ form.addEventListener('submit', (event) => {
 
   if (!emailRegExp.test(emailValue)) {
     event.preventDefault();
+    errorMessage.textContent = 'Please provide a valid email address';
+    errorMessage.classList.add('error-message-show');
+    emailInput.classList.add('input-error');
+  }
+
+  if (emailValue == '') {
+    event.preventDefault();
+    errorMessage.textContent =
+      'Whoops! It looks like you forgot to add your email';
     errorMessage.classList.add('error-message-show');
     emailInput.classList.add('input-error');
   }

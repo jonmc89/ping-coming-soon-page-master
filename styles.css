@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--white);
-  height: 100vh;
+  padding-top: 4rem;
   font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
 }
 
