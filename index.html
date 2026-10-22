@@ -31,16 +31,18 @@
         <p>Subscribe and get notified</p>
       </div>
       <form id="form">
-        <input
-          id="email"
-          class="email-input"
-          placeholder="Your email addess..."
-          aria-label="email"
-          name="email"
-        />
-        <span id="errorMessage" class="error-message"
-          >Please provide a valid email address</span
-        >
+        <div class="email-input-wrapper">
+          <input
+            id="email"
+            class="email-input"
+            placeholder="Your email addess..."
+            aria-label="email"
+            name="email"
+          />
+          <span id="errorMessage" class="error-message"
+            >Please provide a valid email address</span
+          >
+        </div>
         <button type="submit">Notify Me</button>
       </form>
       <img
