@@ -20,8 +20,8 @@
     <script
       src="https://kit.fontawesome.com/d4691f768e.js"
       crossorigin="anonymous"
-      defer
     ></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <main>
@@ -34,12 +34,13 @@
         <input
           id="email"
           class="email-input"
-          type="email"
           placeholder="Your email addess..."
-          required
           aria-label="email"
           name="email"
         />
+        <span id="errorMessage" class="error-message"
+          >Please provide a valid email address</span
+        >
         <button type="submit">Notify Me</button>
       </form>
       <img

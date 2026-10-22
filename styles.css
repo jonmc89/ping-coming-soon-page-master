@@ -91,7 +91,12 @@ form {
     color: var(--blue-950);
   }
 
+  .input-error {
+    border-color: var(--red-400);
+  }
+
   .email-input:focus {
+    outline-color: var(--blue-500);
     border: 0.2rem solid var(--blue-500);
   }
 
@@ -114,6 +119,7 @@ form {
   button {
     transition: filter 0.3s ease-in-out;
     cursor: pointer;
+    outline: var(--blue-500);
     box-shadow: 0 0.5rem 1rem var(--blue-200);
     border: 0.1rem solid var(--blue-500);
     background-color: var(--blue-500);
@@ -124,6 +130,18 @@ form {
   button:hover {
     filter: brightness(120%);
   }
+}
+
+.error-message {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  color: var(--red-400);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.error-message-show {
+  opacity: 1;
 }
 
 .illustration-dashboard-image {
@@ -154,6 +172,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline-color: var(--blue-500);
     border: 0.1rem solid var(--blue-200);
     border-radius: 50%;
     width: 1.9375rem;
