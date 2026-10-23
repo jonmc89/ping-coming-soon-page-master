@@ -155,7 +155,7 @@ form {
 }
 
 .illustration-dashboard-image {
-  width: 19.9956rem;
+  max-width: 19.9956rem;
   height: auto;
 }
 
